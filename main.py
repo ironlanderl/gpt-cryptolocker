@@ -58,5 +58,8 @@ else:
 message_label = tk.Label(root, text=message)
 message_label.pack()
 
+# Disable the close button
+root.protocol("WM_DELETE_WINDOW", lambda: None)
+
 # Start the tkinter event loop
 root.mainloop()
